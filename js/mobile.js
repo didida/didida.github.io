@@ -76,7 +76,7 @@ define([], function(){
 	//第四步 -- 绑定 DOM 事件
 	var bindDOM = function(){
 		var scaleW = scaleW;
-		
+
 		//滑动隐藏
 		document.getElementById("viewer-box").addEventListener("webkitTransitionEnd", function(){
 
@@ -85,13 +85,13 @@ define([], function(){
 				_isShow = true;
 			}else{
 			}
-			
+
 		}, false);
 
 		//点击展示和隐藏
-		ctn.addEventListener("touchend", function(){
-			show();
-		}, false);
+		// ctn.addEventListener("touchend", function(){
+		// 	show();
+		// }, false);
 
 		var $right = document.getElementsByClassName("viewer-box-r")[0];
 		var touchStartTime;
